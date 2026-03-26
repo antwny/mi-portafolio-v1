@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-portfolio-primary: #27e9b5;
+  --color-portfolio-dark: #191919;
+  --color-portfolio-panel: #162936;
+  --color-portfolio-gray: #3b5265;
+  --color-portfolio-light: #f5f5f5;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-portfolio-dark text-portfolio-light antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  @media (pointer: fine) {
+    body, a, button, [role="button"] {
+      cursor: none !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-portfolio {
+    @apply bg-gradient-to-br from-portfolio-primary to-portfolio-panel;
+  }
+
+  .glow-btn {
+    @apply relative flex items-center justify-center gap-2 bg-[#2a2a2a] text-portfolio-primary px-6 py-3 rounded-full text-sm font-bold border border-portfolio-primary/30 transition-all duration-300 hover:bg-portfolio-primary hover:text-[#191919] hover:border-portfolio-primary shadow-[0_0_15px_rgba(39,233,181,0.15)] hover:shadow-[0_0_25px_rgba(39,233,181,0.6)];
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+
+  /* Fade out edges gently without hard background colors */
+  .mask-image-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}

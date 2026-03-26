@@ -1,13 +1,10 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/terminal-square.svg" alt="Logo" width="80" height="80">
   
-  <h3 align="center">Antony A. Benites | Developer Portfolio</h3>
+  <h3 align="center">Antony A. Benites | Portafolio</h3>
 
   <p align="center">
     Un portafolio profesional, moderno y altamente interactivo construido con React, Vite y Tailwind CSS.
-    <br />
-    <br />
-    <a href="#características"><strong>Explorar características »</strong></a>
     <br />
     <br />
   </p>

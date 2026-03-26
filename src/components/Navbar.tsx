@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -32,7 +32,18 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       className="fixed top-0 left-0 w-full z-50 px-6 py-2 md:py-3 flex justify-between items-center bg-[#191919]/80 backdrop-blur-md"
     >
-      <div className="text-xl font-bold tracking-tighter text-white">antw.ny</div>
+      <div className="flex items-center gap-3">
+        <a 
+          href="https://github.com/antwny" 
+          target="_blank" 
+          rel="noreferrer"
+          className="text-white/60 hover:text-[#27e9b5] transition-colors"
+          aria-label="GitHub Profile"
+        >
+          <Github size={22} />
+        </a>
+        <div className="text-xl font-bold tracking-tighter text-white">antw.ny</div>
+      </div>
 
       <div className="hidden md:flex items-center space-x-1 bg-[#2a2a2a]/60 backdrop-blur-md rounded-full px-2 py-1.5 shadow-xl">
         {[

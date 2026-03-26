@@ -83,7 +83,7 @@ A continuación se detalla cómo está diseñado el árbol central de los compon
 <!-- CONTACT -->
 ## 📬 Contacto
 
-Antony A. Benites - [@antwny](https://github.com/antw-ny) 
+Antony A. Benites - [@antwny](https://github.com/antwny) 
 
 Perfil LinkedIn: [https://www.linkedin.com/in/antony-a-benites-b2b16b1ab/](https://www.linkedin.com/in/antony-a-benites-b2b16b1ab/)
 
